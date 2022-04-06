@@ -10,7 +10,7 @@
   btnCarrito.addEventListener("click", () => {
     sectionCarrito.classList.toggle("active");
 
-    if (carrito.lenght !== 0) {
+    if (carrito.lenght === 0) {
       Swal.fire({
         title:"El carrito se encuentra vacio",
         icon:"info",
@@ -153,6 +153,10 @@
     //acc: acumulador   ite:iterador
   };
 
+  const vaciarCarrito = () => {
+    carrito = []
+    mostrarCarrito();
+  };
 
   const calcularTotal = () => {
     if(carrito.lenght !== 0) {
@@ -201,7 +205,7 @@
         })
         .then((response) => {
           if (response.isConfirmed) {
-            console.log(response);
+            vaciarCarrito()
             mixin.fire(
             "Confirmacion de compra realizada",
             "Verifica tu correo para seguir tu pedido.Gracias por elegirlos!",
@@ -215,4 +219,4 @@
 
   cargarProductos();
   mostrarCarrito();
-  btnSectionCarrito(); 
+  btnSectionCarrito();
