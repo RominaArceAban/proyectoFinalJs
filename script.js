@@ -155,6 +155,7 @@
 
   const vaciarCarrito = () => {
     carrito = []
+    sectionCarrito.classList.toggle("active");
     mostrarCarrito();
   };
 
