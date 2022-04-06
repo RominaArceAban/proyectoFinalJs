@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Remera Godess",
+        "precio": 2299,
+        "img":"remGodess.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Remera Duchamp",
+        "precio": 2999,
+        "img":"remDuchamp.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Remera Cactus",
+        "precio": 2299,
+        "img":"remCactus.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Remera Magic",
+        "precio": 1599,
+        "img":"remMagic.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Remera Summer",
+        "precio": 1699,
+        "img":"remSummer.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Remera Shanti",
+        "precio": 1499,
+        "img":"remShanti.jpg"
+    }
+]
